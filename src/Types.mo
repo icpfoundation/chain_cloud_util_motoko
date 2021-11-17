@@ -14,8 +14,12 @@ module {
     };
 
     public type Result = {
-         #Ok : ();
+        #Ok : ();
         #Err: Text;
+    };
+
+    public type Msg = {
+        caller:Principal;
     };
 
 }
