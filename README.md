@@ -1,4 +1,6 @@
 # chain_cloud_util_motoko
+## take care
+  Note that at present, event canisters do not exist on the main network, and will be deployed on the main network soon. Please pay continuous attention
 ## How to use
 1.  Vessel installation:  https://github.com/dfinity/vessel  
 2.  Modify the vessel.dhall file  
@@ -27,3 +29,4 @@
         let res:Types.Result = await Util.createEvent(msg,"mint","mint",canisterId);
         };
     };
+
