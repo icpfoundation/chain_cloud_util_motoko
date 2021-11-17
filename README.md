@@ -16,3 +16,14 @@
     },  
     ] : List Package  
 
+## example  
+    import Principal "mo:base/Principal";
+    import Util  "mo:chain_cloud_util_motoko/Util";
+    import Types "mo:chain_cloud_util_motoko/Types";
+    import D "mo:base/Debug";
+    actor class Example() = this {
+        public shared(msg) func mint() : async () {
+        let canisterId = Principal.fromActor(this);
+        let res:Types.Result = await Util.createEvent(msg,"mint","mint",canisterId);
+        };
+    };
