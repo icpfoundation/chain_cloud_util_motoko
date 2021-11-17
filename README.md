@@ -9,10 +9,10 @@
 
 3.  Modify the additions in the package-set.dhall file  
     let additions = [  
-    { name = "chain_cloud_util_motoko"  
-    , repo = "https://github.com/icpfoundation/chain_cloud_util_motoko"  
-    , version = "v0.1.0"  
-    , dependencies = [ "base" ]  
+    { name = "chain_cloud_util_motoko",    
+      repo = "https://github.com/icpfoundation/chain_cloud_util_motoko",   
+      version = "v0.1.0",    
+      dependencies = [ "base" ]  
     },  
     ] : List Package  
 
